@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&family=Amaranth&family=Righteous&family=Oxygen');
+
+:root {
+  --background-color: rgba(35, 15, 50, 1);
+  --text-color: rgb(227, 219, 204);
+  --link-highlight: rgb(128, 255, 0);
+  --link-color-highlighted: rgb(180, 210, 255);
+}
+
+* {
+  color: var(--text-color);
+  margin: 0;
+  transition: all 0.25s linear;
+}
+
+header {
+  min-height: 150px;
+}
+
+main {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  max-height: 155px;
+}
+
+header,
+h1,
+h2,
+h3,
+a {
+  font-family: 'Carter One', Righteous, Amaranth, Verdana, Geneva, Tahoma,
+    sans-serif;
+  text-decoration: none;
+}
+
+.active,
+a:hover,
+a:active {
+  color: var(--link-color-highlighted);
+  text-shadow: 0 0 20px var(--link-highlight);
+}
+
+.card:hover {
+  box-shadow: 0 0 8px var(--link-highlight);
+}
+
+p,
+li {
+  font-family: Oxygen, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
