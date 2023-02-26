@@ -18,7 +18,7 @@ Visit the [site](https://eljayman.github.io/my-react-portfolio/) built with [Rea
 
 ## Link to Video
 
-[Video](https://watch.screencastify.com/v/jRpyoSmsuRYovgMSN9ZW)
+[Video](https://watch.screencastify.com/v/2HQLVZ3OOnjy01EFb9Ay)
 
 ## Questions
 
