@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-react-portfolio/static/css/main.570836fa.css",
+    "main.js": "/my-react-portfolio/static/js/main.b0da3a70.js",
+    "static/media/sandy.png": "/my-react-portfolio/static/media/sandy.e94ccf258390e2e6ed2a.png",
+    "static/media/gitselfie.jpg": "/my-react-portfolio/static/media/gitselfie.2c84767adb516a02b859.jpg",
+    "static/media/petfeedapp.png": "/my-react-portfolio/static/media/petfeedapp.1f765ce3861da552ad33.png",
+    "static/media/gist.png": "/my-react-portfolio/static/media/gist.e7a87ec6e69b2f269727.png",
+    "static/media/mysqlapp.png": "/my-react-portfolio/static/media/mysqlapp.6595c828c5252993d4b8.png",
+    "static/media/weatherapp.png": "/my-react-portfolio/static/media/weatherapp.2cffc3996a4e7e365057.png",
+    "static/media/mongooseapp.png": "/my-react-portfolio/static/media/mongooseapp.477789413d3c4aadb2cf.png",
+    "static/media/mvcapp.png": "/my-react-portfolio/static/media/mvcapp.9fd3acfdec1cff3e9fdd.png",
+    "static/media/jsquizapp.png": "/my-react-portfolio/static/media/jsquizapp.845b9dcf034ae9626917.png",
+    "index.html": "/my-react-portfolio/index.html",
+    "main.570836fa.css.map": "/my-react-portfolio/static/css/main.570836fa.css.map",
+    "main.b0da3a70.js.map": "/my-react-portfolio/static/js/main.b0da3a70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.570836fa.css",
+    "static/js/main.b0da3a70.js"
+  ]
+}
