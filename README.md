@@ -2,21 +2,23 @@
 
 ## Description
 
-This is my professional site built with [React.js](https://reactjs.org/) to show to employers so that they can look at some of my best projects and the code.
+Visit the [site](https://eljayman.github.io/my-react-portfolio/) built with [React.js](https://reactjs.org/) and look at some of my best projects and the code.
 
 ## Table of Contents
 
-- [Credits](#credits)
-- [MIT license License](#license)
-- [Link to Video](#link-to-video)
-
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- [React Portfolio](#react-portfolio)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Link to Video](#link-to-video)
+  - [Questions](#questions)
+  - [Credits](#credits)
+  - [License](#license)
 
 ![Screenshot of application](./app.png)
 
 ## Link to Video
 
-[Video](https://watch.screencastify.com/v/EBSxPnbfUJ3UjzwT5lEl)
+[Video](https://watch.screencastify.com/v/jRpyoSmsuRYovgMSN9ZW)
 
 ## Questions
 
@@ -28,7 +30,7 @@ My repo URL is: [https://github.com/eljayman/my-react-portfolio](https://github.
 
 ## Credits
 
-This application was built in [node.js](https://nodejs.org/) and used [React.js.](https://reactjs.org/)
+This application was built in [node.js](https://nodejs.org/) with [React.js.](https://reactjs.org/) and uses [EmailJS](https://www.emailjs.com/) to send me your message.
 
 ## License
 
