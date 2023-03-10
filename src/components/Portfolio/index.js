@@ -7,6 +7,7 @@ import mongooseAppImage from '../../assets/images/mongooseapp.png';
 import mySQLAppImage from '../../assets/images/mysqlapp.png';
 import regExImage from '../../assets/images/gist.png';
 import jsQuizImage from '../../assets/images/jsquizapp.png';
+import soundsEasyImage from '../../assets/images/soundseasy.png';
 
 const styles = {
   main: {
@@ -22,6 +23,13 @@ const styles = {
 };
 
 const projects = [
+  {
+    title: 'Sounds Easy',
+    description: 'A soundboard for cheapskates',
+    gitURL: 'https://github.com/eljayman/sounds-easy',
+    deployedURL: 'https://sounds-easy.herokuapp.com/',
+    image: soundsEasyImage,
+  },
   {
     title: 'MVC Blog App',
     description: 'Tech blog app created with the MVC paradigm',
