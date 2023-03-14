@@ -42,7 +42,7 @@ export function ProjectCard({
       <div style={styles.subDiv}>
         <p>{description}</p>
         <a href={gitURL}>
-          <img style={styles.img} src={gitIcon} />
+          <img style={styles.img} src={gitIcon} alt={title} />
         </a>
       </div>
     </a>
