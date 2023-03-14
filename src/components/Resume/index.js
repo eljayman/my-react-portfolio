@@ -29,7 +29,7 @@ export function Resume() {
       <h3 style={styles.h3}>
         <a
           style={styles.a}
-          href="https://drive.google.com/file/d/1oXTy7TJgOhFTMishbZrQY9PP4cJnP-qd/view?usp=sharing"
+          href="https://docs.google.com/document/d/1c3xuyPVUHX61MEiH3ZuGDShPlOQrBZ62V1r6pKh7ujc/edit?usp=sharing"
           download
         >
           Download Here
@@ -55,6 +55,7 @@ export function Resume() {
           <li>MongoDB</li>
           <li>Mongoose</li>
           <li>Sequelize</li>
+          <li>GraphQL</li>
           <li>Express.js</li>
           <li>Testing</li>
         </ul>

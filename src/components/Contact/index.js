@@ -56,12 +56,15 @@ export function Contact() {
     },
   });
   const form = useRef();
-  const SERVICE_ID = 'service_9c1va2e';
-  const TEMPLATE_ID = 'template_txukwqq';
-  const PUBLIC_KEY = 'YRCBYFo-1NOgtWSq_';
+
   async function sendEmail() {
     await emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
       .then(
         () => {
           alert('Message sent, thank you!');
