@@ -29,10 +29,9 @@ export function Resume() {
       <h3 style={styles.h3}>
         <a
           style={styles.a}
-          href="https://docs.google.com/document/d/1c3xuyPVUHX61MEiH3ZuGDShPlOQrBZ62V1r6pKh7ujc/edit?usp=sharing"
-          download
+          href="https://docs.google.com/document/d/1LFA126XrRJ24892_afeOGpK2wIvAmS3nF_Avq5Ss_qA/edit?usp=sharing"
         >
-          Download Here
+          View Document
         </a>
       </h3>
       <div>

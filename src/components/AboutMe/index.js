@@ -11,6 +11,12 @@ const styles = {
     padding: '25px',
     fontSize: '32px',
   },
+  li: {
+    paddingLeft: '25px',
+    fontSize: '24px',
+    paddingBottom: '5px',
+  },
+
   img: {
     marginLeft: '10%',
     borderRadius: '50%',
@@ -28,6 +34,16 @@ export function AboutMe() {
   return (
     <main style={styles.main}>
       <h2 style={styles.h2}>About Me</h2>
+      <ul>
+        <li style={styles.li}>Full Stack Web Developer</li>
+
+        <li style={styles.li}>
+          Address: 7937 South 2940 West, West Jordan, UT
+        </li>
+        <li style={styles.li}>
+          Email: <a href="mailto:lelandoj@gmail.com">lelandoj@gmail.com</a>
+        </li>
+      </ul>
 
       <img style={styles.img} src={selfie} alt="Selfie" />
       <p style={styles.p}>

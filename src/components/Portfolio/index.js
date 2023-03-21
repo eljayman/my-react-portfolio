@@ -16,7 +16,7 @@ const styles = {
 };
 
 const projectCardComponents = projects.map(
-  ({ title, description, gitURL, deployedURL, image }) => {
+  ({ title, description, gitURL, deployedURL, image, tech }) => {
     return (
       <ProjectCard
         key={title}
@@ -25,6 +25,7 @@ const projectCardComponents = projects.map(
         gitURL={gitURL}
         deployedURL={deployedURL}
         image={image}
+        tech={tech}
       />
     );
   }

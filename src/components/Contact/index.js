@@ -14,6 +14,7 @@ const styles = {
   },
   form: {
     border: 'groove',
+    borderRadius: '8px',
     padding: '8px',
     backgroundColor: 'rgb(45, 20, 90)',
     width: '90vw',
