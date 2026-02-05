@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Carter+One&family=Amaranth&family=Righteous&family=Oxygen');
 
 :root {
-  --background-color: rgba(35, 15, 50, 1);
-  --text-color: rgb(227, 219, 204);
+  --background-color: #d3d3d3;
+  --text-color: #333333;
   --link-highlight: rgb(128, 255, 0);
   --link-color-highlighted: rgb(180, 210, 255);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
@@ -13,20 +19,168 @@
   transition: all 0.25s linear;
 }
 
+body {
+  overflow-x: clip;
+}
+
+body {
+  background-color: #b0b0b0;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+/* Mobile drawer styles */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 200;
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.drawer-overlay.open {
+  opacity: 1;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 280px;
+  height: 100%;
+  background-color: var(--background-color);
+  z-index: 160;
+  transition: transform 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding-top: 60px;
+}
+
+.mobile-drawer.open {
+  transform: translateX(-280px);
+}
+
+.mobile-drawer .nav-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 0;
+}
+
+.mobile-drawer .nav-item {
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-drawer .nav-item:last-child {
+  border-bottom: none;
+}
+
+.mobile-drawer .social-links {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
 header {
-  min-height: 150px;
+  min-height: auto;
+  background-color: var(--background-color);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 main {
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
-footer {
-  max-height: 155px;
+@media (max-width: 767px) {
+  body {
+    background-color: var(--background-color);
+  }
+
+  .hamburger-btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .drawer-overlay {
+    display: block;
+    pointer-events: none;
+  }
+
+  .drawer-overlay.open {
+    pointer-events: auto;
+  }
+
+  .desktop-nav,
+  .desktop-social {
+    display: none !important;
+  }
+
+  header {
+    position: relative;
+    display: block;
+    min-height: 50px;
+    margin-top: 15px;
+  }
+
+  main {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    box-shadow: none;
+  }
 }
 
 header,
@@ -42,8 +196,8 @@ a {
 .active,
 a:hover,
 a:active {
-  color: var(--link-color-highlighted);
-  text-shadow: 0 0 20px var(--link-highlight);
+  color: #0066cc;
+  text-shadow: none;
 }
 
 .card:hover {
@@ -57,4 +211,175 @@ li {
 
 ul {
   list-style: none;
+}
+
+/* Profile Hero Section */
+.profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0 30px 0;
+  width: 100%;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0066cc;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #555;
+}
+
+.profile-info .location {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.profile-info .location i {
+  color: #0066cc;
+  margin-right: 5px;
+}
+
+.availability {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e8f5e9;
+  color: #2e7d32 !important;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 5px;
+  width: fit-content;
+}
+
+.availability i {
+  font-size: 8px;
+  margin-right: 8px;
+  color: #2e7d32;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0052a3;
+  color: white !important;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  border: 2px solid #0066cc;
+  color: #0066cc !important;
+}
+
+.cta-button.secondary:hover {
+  background-color: #0066cc;
+  color: white !important;
+}
+
+/* Education Section */
+.education-section {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.education-item {
+  padding: 15px 0;
+}
+
+.education-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.education-school {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 8px;
+  margin-left: 30px;
+}
+
+.credential-link {
+  font-size: 14px;
+  margin-left: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.credential-link i {
+  color: #0066cc;
+}
+
+/* Mobile responsive for profile hero */
+@media (max-width: 767px) {
+  .profile-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profile-info {
+    align-items: center;
+  }
+
+  .profile-info .location {
+    justify-content: center;
+  }
+
+  .availability {
+    margin: 10px auto 0 auto;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .education-school,
+  .credential-link {
+    margin-left: 0;
+  }
+
+  .education-title {
+    justify-content: center;
+  }
 }

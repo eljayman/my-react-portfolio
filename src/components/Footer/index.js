@@ -10,7 +10,7 @@ const styles = {
     justifyContent: 'center',
     padding: '2vw',
     height: '25vw',
-    backgroundColor: 'rgba(35, 15, 50, 1)',
+    backgroundColor: '#d3d3d3',
     minHeight: '240px',
   },
   ul: {
