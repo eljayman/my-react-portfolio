@@ -97,7 +97,6 @@ export function Header({ currentPage, handlePageChange }) {
     { page: 'Portfolio', label: 'Projects', href: '#projects' },
     { page: 'Writing', label: 'Writing', href: '#writing' },
     { page: 'Contact', label: 'Contact', href: '#contact' },
-    { page: 'Resume', label: 'Resume', href: '#resume' },
   ];
 
   return (

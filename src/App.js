@@ -5,15 +5,11 @@ import { AboutMe } from './components/AboutMe';
 import { Portfolio } from './components/Portfolio';
 import { Writing } from './components/Writing';
 import { Contact } from './components/Contact';
-import { Resume } from './components/Resume';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
   const handlePageChange = (page) => setCurrentPage(page);
   const renderPage = () => {
-    if (currentPage === 'Resume') {
-      return <Resume />;
-    }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
     }

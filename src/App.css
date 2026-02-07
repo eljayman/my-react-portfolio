@@ -201,7 +201,18 @@ a:active {
 }
 
 .card:hover {
-  box-shadow: 0 0 8px var(--link-highlight);
+  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.2);
+  border-color: #0066cc;
+  transform: translateY(-2px);
+}
+
+.writing-article:hover {
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+  border-color: #0066cc;
+}
+
+.featured-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.25);
 }
 
 p,
@@ -381,5 +392,22 @@ ul {
 
   .education-title {
     justify-content: center;
+  }
+
+  .writing-article {
+    flex-direction: column;
+  }
+
+  .writing-article img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .featured-card {
+    flex-direction: column !important;
+  }
+
+  .featured-card img {
+    min-height: 200px !important;
   }
 }
