@@ -6,6 +6,7 @@ import jsQuizImage from '../../assets/images/jsquizapp.png';
 import soundsEasyImage from '../../assets/images/soundseasy.png';
 import weatherAppImage from '../../assets/images/weatherapp.png';
 import dayPlannerImage from '../../assets/images/dayPlannerApp.png';
+import regExImage from '../../assets/images/gist.png';
 
 export default [
   {
@@ -71,5 +72,14 @@ export default [
     deployedURL: 'https://eljayman.github.io/04-web-APIs-challenge/',
     image: jsQuizImage,
     tech: ['JavaScript', 'HTML', 'CSS'],
+  },
+  {
+    title: 'RegEx Tutorial',
+    description: 'A gist about regular expressions',
+    gitURL: 'https://gist.github.com/eljayman/01f0e8811784b08e155c2597548ee182',
+    deployedURL:
+      'https://gist.github.com/eljayman/01f0e8811784b08e155c2597548ee182',
+    image: regExImage,
+    tech: ['Regular Expressions', 'GitHub Gists', 'Markdown'],
   },
 ];
