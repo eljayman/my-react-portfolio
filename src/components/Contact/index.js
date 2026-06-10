@@ -141,9 +141,9 @@ export function Contact() {
   return (
     <main style={styles.main}>
       <h2 style={styles.h2}>Contact Me</h2>
-      <p style={styles.emailText}>
+      {/* <p style={styles.emailText}>
         Email me at <a href="mailto:lelandoj@gmail.com" style={styles.emailLink}>lelandoj@gmail.com</a>
-      </p>
+      </p> */}
       <p style={styles.emailText}>
         Connect on <a href="https://www.linkedin.com/in/leland-c-johnson/" style={styles.emailLink} target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
