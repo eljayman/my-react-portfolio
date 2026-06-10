@@ -90,7 +90,7 @@ export function AboutMe({ handlePageChange }) {
       </div>
 
       <p style={styles.p}>
-        I am a full stack web developer with over two and a half years of experience working with a variety of technologies and frameworks across frontend, backend, and cloud platforms.
+        I am a full stack software engineer with several years of hands-on development experience working with a variety of technologies and frameworks across frontend, backend, and cloud platforms.
       </p>
 
       <p style={styles.p}>

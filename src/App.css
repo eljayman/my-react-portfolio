@@ -215,6 +215,23 @@ a:active {
   box-shadow: 0 6px 20px rgba(0, 102, 204, 0.25);
 }
 
+.portfolio-main {
+  max-width: 900px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 p,
 li {
   font-family: Oxygen, Verdana, Geneva, Tahoma, sans-serif;

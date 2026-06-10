@@ -116,10 +116,10 @@ export function Header({ currentPage, handlePageChange }) {
         ))}
       </ul>
       <div style={styles.socialLinks} className="desktop-social">
-        <a href="https://github.com/eljayman">
+        <a href="https://github.com/eljayman" target="_blank" rel="noopener noreferrer">
           <img style={styles.socialIcon} src={githubicon} alt="My GitHub" />
         </a>
-        <a href="https://www.linkedin.com/in/leland-johnson-0111bb263/">
+        <a href="https://www.linkedin.com/in/leland-c-johnson/" target="_blank" rel="noopener noreferrer">
           <img style={styles.socialIcon} src={linkedinicon} alt="My LinkedIn" />
         </a>
       </div>
@@ -163,10 +163,10 @@ export function Header({ currentPage, handlePageChange }) {
           ))}
         </ul>
         <div className="social-links">
-          <a href="https://github.com/eljayman">
+          <a href="https://github.com/eljayman" target="_blank" rel="noopener noreferrer">
             <img style={styles.socialIcon} src={githubicon} alt="My GitHub" />
           </a>
-          <a href="https://www.linkedin.com/in/leland-johnson-0111bb263/">
+          <a href="https://www.linkedin.com/in/leland-c-johnson/" target="_blank" rel="noopener noreferrer">
             <img style={styles.socialIcon} src={linkedinicon} alt="My LinkedIn" />
           </a>
         </div>

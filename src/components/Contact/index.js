@@ -144,6 +144,9 @@ export function Contact() {
       <p style={styles.emailText}>
         Email me at <a href="mailto:lelandoj@gmail.com" style={styles.emailLink}>lelandoj@gmail.com</a>
       </p>
+      <p style={styles.emailText}>
+        Connect on <a href="https://www.linkedin.com/in/leland-c-johnson/" style={styles.emailLink} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
       <p style={styles.orText}>Or you can contact me using this form:</p>
       {submitStatus && (
         <p style={submitStatus.type === 'success' ? styles.successMessage : styles.errorMessage}>

@@ -46,11 +46,7 @@ const styles = {
     fontSize: '14px',
   },
   grid: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: '20px',
     width: '100%',
-    justifyContent: 'center',
   },
 };
 
@@ -85,7 +81,7 @@ export function Portfolio() {
     );
 
   return (
-    <main style={styles.main}>
+    <main style={styles.main} className="portfolio-main">
       <h2 style={styles.h2}>Projects</h2>
       <p style={styles.intro}>
         A selection of projects I&apos;ve built, ranging from full-stack applications
@@ -119,7 +115,7 @@ export function Portfolio() {
         ))}
       </div>
 
-      <div style={styles.grid}>
+      <div style={styles.grid} className="project-grid">
         {filteredProjects.map(({ title, description, gitURL, deployedURL, image, tech }) => (
           <ProjectCard
             key={title}

@@ -18,7 +18,7 @@ export function ProjectCard({
       border: featured ? '2px solid #0066cc' : '1px solid #ccc',
       borderRadius: '8px',
       width: '100%',
-      maxWidth: featured ? '100%' : '320px',
+      maxWidth: '100%',
       minHeight: featured ? 'auto' : '420px',
       backgroundColor: '#ffffff',
       overflow: 'hidden',
