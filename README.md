@@ -2,23 +2,18 @@
 
 ## Description
 
-Visit the [site](https://eljayman.github.io/my-react-portfolio/) built with [React.js](https://reactjs.org/) and look at some of my best projects and the code.
+Visit the [site](https://lelandcjohnson.com/) built with [React.js](https://reactjs.org/) and look at some of my best projects and the code. Deployed on [Netlify](https://www.netlify.com/).
 
 ## Table of Contents
 
 - [React Portfolio](#react-portfolio)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
-  - [Link to Video](#link-to-video)
   - [Questions](#questions)
   - [Credits](#credits)
   - [License](#license)
 
 ![Screenshot of application](./app.png)
-
-## Link to Video
-
-[Video](https://watch.screencastify.com/v/2HQLVZ3OOnjy01EFb9Ay)
 
 ## Questions
 

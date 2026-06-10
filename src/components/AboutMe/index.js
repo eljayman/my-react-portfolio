@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '../../assets/images/gitselfie.jpg';
+import profilePhoto from '../../assets/images/selfie.jpg';
 
 const styles = {
   main: {
